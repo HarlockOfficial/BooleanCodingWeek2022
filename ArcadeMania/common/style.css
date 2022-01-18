@@ -1,0 +1,68 @@
+:root {
+    --accent-color: #ffc107;
+    --background-color: blue;
+    --accent-color: fuchsia;
+}
+
+* {
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover {
+    color: var(--accent-color);
+}
+
+/* base structure for game pages */
+.board{
+    display: flex;
+    flex-direction: row;
+}
+
+.game-area {
+    padding: 12px;
+    position: relative;
+}
+
+.game-data {
+    padding: 12px;
+    width: 240px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Alert */
+.game-alert {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-alert-message {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    background-color: var(--accent-color);
+}
