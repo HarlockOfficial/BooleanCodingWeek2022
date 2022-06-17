@@ -24,7 +24,7 @@ function checkWin(symbol) {
 }
 
 function checkGameOver() {
-    console.log(turn)
+    console.log(turn);
     return turn === 9;
 }
 

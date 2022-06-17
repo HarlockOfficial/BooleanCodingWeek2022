@@ -1,68 +1,100 @@
-:root {
-    --accent-color: #ffc107;
-    --background-color: blue;
-    --accent-color: fuchsia;
+:root{
+    --bg-color: #3535ec;
+    --accent-color: #f70d68;
 }
 
-* {
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-color);
     font-family: 'Press Start 2P', cursive;
+
+    line-height: 1.4;
+    color: #ffffff;
 }
 
-body {
-    background-color: var(--background-color);
+.container{
+    width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 50px auto;
 }
 
-a {
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    margin-bottom: 16px;
+}
+
+a{
     color: #ffffff;
     text-decoration: none;
 }
-a:hover {
+
+a:hover{
     color: var(--accent-color);
 }
 
-/* base structure for game pages */
+
+/* STRUTTURA BASE PAGINE DEI GIOCHI */
+
 .board{
     display: flex;
     flex-direction: row;
 }
 
-.game-area {
+.game-area{
     padding: 12px;
+
     position: relative;
 }
 
-.game-data {
+.game-data{
     padding: 12px;
     width: 240px;
 }
 
-h1 {
+h1{
     font-size: 36px;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 
-p {
+p{
     font-size: 16px;
     margin-bottom: 20px;
 }
 
-/* Alert */
-.game-alert {
-    position: absolute;
+/* ALERT */
 
+.game-alert{
+    position: absolute;
     top: 0;
-    left: 0;
+    left:0;
     right: 0;
-    bottom: 0;
+    bottom:0;
+
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.game-alert-message {
-    text-align: center;
+.game-alert-message{
     font-size: 40px;
     padding: 20px;
+
     background-color: var(--accent-color);
 }
